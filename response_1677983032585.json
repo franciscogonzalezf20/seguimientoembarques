@@ -1,0 +1,97 @@
+{
+  "transport-route": {
+    "name": "ELP-DANA",
+    "start-route": "Avanzaloop",
+    "end-route": "Dana cuu",
+    "checkpoints": [
+      {
+        "datos": {
+          "id": "4665246915",
+          "scheduledDepartureTime": "2023-03-04T03:00:00.000Z",
+          "notes": "",
+          "address": {
+            "id": "14437713",
+            "name": "Avanzaloop"
+          },
+          "name": "AVANZALOOP-",
+          "skippedTime": "2023-03-04T19:00:00.000Z",
+          "state": "skipped",
+          "liveSharingUrl": "https://cloud.samsara.com/o/31250/fleet/viewer/job/kkamVVGB0uoppdNZEfyy"
+        },
+        "punto de control": true,
+        "aka": "en carga"
+      },
+      {
+        "datos": {
+          "id": "4665246916",
+          "scheduledDepartureTime": "2023-03-04T05:00:00.000Z",
+          "scheduledArrivalTime": "2023-03-04T04:30:00.000Z",
+          "notes": "",
+          "address": {
+            "id": "12157291",
+            "name": "Aduana Estadounidense"
+          },
+          "name": "Aduana Americana",
+          "skippedTime": "2023-03-04T19:00:00.000Z",
+          "state": "skipped",
+          "liveSharingUrl": "https://cloud.samsara.com/o/31250/fleet/viewer/job/fcI4KTnmRR9u8GBjcRpb"
+        },
+        "punto de control": true,
+        "aka": "aduana Estados Unidos"
+      },
+      {
+        "datos": {
+          "id": "4665246917",
+          "scheduledDepartureTime": "2023-03-04T06:00:00.000Z",
+          "scheduledArrivalTime": "2023-03-04T05:30:00.000Z",
+          "notes": "",
+          "address": {
+            "id": "12157279",
+            "name": "Aduana Mexicana"
+          },
+          "name": "Aduana Mexicana",
+          "skippedTime": "2023-03-04T19:00:00.000Z",
+          "state": "skipped",
+          "liveSharingUrl": "https://cloud.samsara.com/o/31250/fleet/viewer/job/7Kg65Tqzi44ScLozolas"
+        },
+        "punto de control": true,
+        "aka": "aduana México"
+      },
+      {
+        "datos": {
+          "id": "4665246918",
+          "scheduledDepartureTime": "2023-03-04T09:00:00.000Z",
+          "scheduledArrivalTime": "2023-03-04T08:30:00.000Z",
+          "notes": "",
+          "address": {
+            "id": "12157203",
+            "name": "Caseta Villa Aumada"
+          },
+          "name": "Caseta Villa Aumada",
+          "skippedTime": "2023-03-04T19:00:00.000Z",
+          "state": "skipped",
+          "liveSharingUrl": "https://cloud.samsara.com/o/31250/fleet/viewer/job/m9Ub109NRe3LrDh1ePx3"
+        },
+        "punto de control": true,
+        "aka": "Caseta Villa Aumada"
+      },
+      {
+        "datos": {
+          "id": "4665246919",
+          "scheduledArrivalTime": "2023-03-04T13:00:00.000Z",
+          "notes": "",
+          "address": {
+            "id": "13940860",
+            "name": "Dana cuu"
+          },
+          "name": "DANA",
+          "skippedTime": "2023-03-04T19:00:00.000Z",
+          "state": "skipped",
+          "liveSharingUrl": "https://cloud.samsara.com/o/31250/fleet/viewer/job/yC7XNqinv84oImmfBDq6"
+        },
+        "punto de control": true,
+        "aka": "en descarga"
+      }
+    ]
+  }
+}
