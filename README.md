@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Implementación HU Samsara Rutas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ejercicio de implementación de Historia de Usuario Transportes Soto:
+esta sera la interfaz para transportes soto usando
+samsara para el seguimiento de embarques.
+# Api TRS (Transport Routes Samsara)
+## Table of Contents
+1. [Info General](#info-general)
+2. [Requerimientos](#requerimientos)
+3. [Tecnologias](#tecnologias)
+4. [Instalacion](#instalacion)
+5. [End Points](#end-points)
 
-## Available Scripts
+### Info General
+***
+Esta aplicacion esta echa con javaScript con el framework de react y react bootstrap.
 
-In the project directory, you can run:
+### Requerimientos
+***
+tener instaladas las dependencias existentes en requeriments.txt
+### Tecnologias
+***
+Lenguaje de programación: javascript
 
-### `npm start`
+Framework: React versión 18.2.0\
+Documentación: https://fastapi.tiangolo.com/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Entorno de tiempo: Node.js version 19.6.1
+### Instalacion
+***
+ la instalación.
+```
+$ git clone <proyecto.git>
+$ cd ../path/del/archivo>
+$ npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+Usamos el comando git para clonar el repositorio en el servidor. 
+```
+$ git clone <proyecto.git>
+``` 
+Usamos cd para entrar al directorio del proyecto.
+```
+$ cd ../path/del/archivo
+``` 
+Usamos npm para instalar los módulos necesarios para el proyecto funcioné.
+```
+$ npm install
+``` 
+estando en la carpeta del proyecto lo iniciamos con npm start.
+```
+$ npm start
+```
+### End Points
 
-### `npm test`
+### Variables de ambiente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`fetch` este se encuentra en segumiento_embarque.js
+`fetch` este se encuentra en index.js
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### despliegue
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Construir la aplicación: Antes de desplegar la aplicación, debemos construirla. En la carpeta del proyecto, abrimos la terminal y ejecutamos el comando "npm run build". Este comando creará una versión optimizada y compilada de la aplicación en la carpeta "build".
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Elegir un servicio de alojamiento: Podemos alojar nuestra aplicación en diferentes servicios, como Heroku, AWS, Netlify, etc. Dependiendo de la elección, el proceso puede variar un poco.
 
-### `npm run eject`
+Subir la aplicación: Una vez que tenemos la versión optimizada de la aplicación, podemos subirla al servicio de alojamiento elegido. Normalmente, esto se hace mediante FTP o mediante el uso de herramientas de línea de comandos como Git.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Configurar el servidor web: Una vez que hemos subido la aplicación, debemos configurar el servidor web para que sirva los archivos estáticos. Por ejemplo, si estamos usando Apache, podemos agregar un archivo .htaccess en la carpeta raíz de la aplicación con las siguientes líneas:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+RewriteEngine On
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Esto redirigirá todas las solicitudes al archivo index.html, que es la entrada principal de nuestra aplicación de React.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Configurar las variables de entorno: En producción, es posible que necesitemos configurar algunas variables de entorno, como la URL del servidor API, claves de acceso a servicios externos, etc. Algunos servicios de alojamiento nos permiten configurar estas variables de entorno directamente en su panel de control, mientras que en otros, tendremos que configurarlas manualmente en el servidor.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Probar la aplicación: Finalmente, debemos probar la aplicación para asegurarnos de que todo funciona correctamente. Podemos hacer esto visitando la URL de la aplicación en nuestro navegador y probando todas las funcionalidades de la aplicación.
