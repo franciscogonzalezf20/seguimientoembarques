@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Tractores from "./tractores";
-import Remolques from "./remolques";
+import Remolques from "./tabla";
 import SeguimientoEmbarques from "./segumiento_embarque";
 
 
